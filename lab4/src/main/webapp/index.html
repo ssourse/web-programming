@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ЛР № 4 — Интернационализация / Localization</title>
+  <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+<main class="container">
+  <p class="eyebrow">Web-программирование · Лабораторная работа № 4</p>
+  <h1>Список книг / Book list</h1>
+  <p>Выберите язык интерфейса, имя читателя и фильтр.
+     Результат формируется Java-сервлетом с помощью ResourceBundle.</p>
+  <form action="BooksList" method="get">
+    <label for="name">Имя читателя / Reader name</label>
+    <input id="name" name="name" type="text" value="Дарья" maxlength="100">
+    <label for="read">Фильтр / Filter</label>
+    <select id="read" name="read">
+      <option value="all">Все книги / All books</option>
+      <option value="yes">Прочитанные / Read</option>
+      <option value="no">Непрочитанные / Unread</option>
+    </select>
+    <label for="lang">Язык / Language</label>
+    <select id="lang" name="lang">
+      <option value="ru">Русский</option>
+      <option value="en">English</option>
+    </select>
+    <button type="submit">Показать список / Show books</button>
+  </form>
+  <p class="hint">Прямые адреса: <a href="BooksList?lang=ru">Русский</a> ·
+    <a href="BooksList?lang=en">English</a></p>
+</main>
+</body>
+</html>
