@@ -1,0 +1,45 @@
+@options
+@packages
+@argfile
+-classpath
+'C:/Users/user/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/web-programming/lab3/src/main/java'
+-author
+-bottom
+'Copyright &#169; 1980. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/web-programming/lab3/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'lab3 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/web-programming/lab3/target/javadoc-bundle-options'
+-use
+-version
+-windowtitle
+'lab3 1.0-SNAPSHOT API'
+ru.etu.lab3
+'C:/web-programming/lab3/src/main/java/ru/etu/lab3/BooksListServlet.java'
+C:\Users\user\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar = 1794943735936
+C:\web-programming\lab3\src\main\java = 1794947516955
+C:\web-programming\lab3\target\site\apidocs\allclasses-frame.html = 1794948572188
+C:\web-programming\lab3\target\site\apidocs\allclasses-noframe.html = 1794948572190
+C:\web-programming\lab3\target\site\apidocs\constant-values.html = 1794948572164
+C:\web-programming\lab3\target\site\apidocs\deprecated-list.html = 1794948572188
+C:\web-programming\lab3\target\site\apidocs\help-doc.html = 1794948572194
+C:\web-programming\lab3\target\site\apidocs\index-all.html = 1794948572186
+C:\web-programming\lab3\target\site\apidocs\index.html = 1794948572190
+C:\web-programming\lab3\target\site\apidocs\overview-tree.html = 1794948572176
+C:\web-programming\lab3\target\site\apidocs\package-list = 1794948572150
+C:\web-programming\lab3\target\site\apidocs\script.js = 1794948572196
+C:\web-programming\lab3\target\site\apidocs\serialized-form.html = 1794948572172
+C:\web-programming\lab3\target\site\apidocs\stylesheet.css = 1794948572196

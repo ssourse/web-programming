@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа № 3 — Сервлеты</title>
+    <link rel="stylesheet" href="resources/style.css">
+</head>
+<body>
+<main class="container">
+    <p class="eyebrow">Web-программирование · Лабораторная работа № 3</p>
+    <h1>Список книг читателя</h1>
+    <p>Введите имя и выберите, какие книги показать. Запрос обработает Java Servlet.</p>
+    <form action="BooksList" method="get">
+        <label for="name">Имя читателя</label>
+        <input id="name" name="name" type="text" maxlength="100" value="Дарья"
+               placeholder="Например, Дарья" autocomplete="off">
+        <label for="read">Статус книги</label>
+        <select id="read" name="read">
+            <option value="all">Все книги</option>
+            <option value="yes">Прочитанные</option>
+            <option value="no">Непрочитанные</option>
+        </select>
+        <button type="submit">Показать книги</button>
+    </form>
+    <p class="hint">Параметры name и read передаются сервлету /BooksList.</p>
+</main>
+</body>
+</html>

@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes and Interfaces","u":"allclasses-index.html"},{"p":"ru.etu.lab3","l":"BooksListServlet"}];updateSearchResults();
