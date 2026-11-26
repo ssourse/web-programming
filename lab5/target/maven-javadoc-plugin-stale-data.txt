@@ -1,0 +1,44 @@
+@options
+@packages
+-classpath
+'C:/Users/user/.m2/repository/javax/servlet/javax.servlet-api/4.0.1/javax.servlet-api-4.0.1.jar;C:/Users/user/.m2/repository/javax/servlet/jsp/javax.servlet.jsp-api/2.3.3/javax.servlet.jsp-api-2.3.3.jar'
+-encoding
+'UTF-8'
+-protected
+-source
+'1.8'
+-sourcepath
+'C:/web-programming/lab5/src/main/java'
+-author
+-bottom
+'Copyright &#169; 1980. All rights reserved.'
+-charset
+'UTF-8'
+-d
+'C:/web-programming/lab5/target/site/apidocs'
+-docencoding
+'UTF-8'
+-doctitle
+'lab5 1.0-SNAPSHOT API'
+-linkoffline
+'https://docs.oracle.com/javase/8/docs/api' 'C:/web-programming/lab5/target/javadoc-bundle-options'
+-notimestamp
+-use
+-version
+-windowtitle
+'lab5 1.0-SNAPSHOT API'
+ru.etu.lab5
+C:\Users\user\.m2\repository\javax\servlet\javax.servlet-api\4.0.1\javax.servlet-api-4.0.1.jar = 1794943735936
+C:\Users\user\.m2\repository\javax\servlet\jsp\javax.servlet.jsp-api\2.3.3\javax.servlet.jsp-api-2.3.3.jar = 1795008894276
+C:\web-programming\lab5\src\main\java = 1795008819314
+C:\web-programming\lab5\target\site\apidocs\allclasses-frame.html = 1795685097014
+C:\web-programming\lab5\target\site\apidocs\allclasses-noframe.html = 1795685097015
+C:\web-programming\lab5\target\site\apidocs\constant-values.html = 1795685096984
+C:\web-programming\lab5\target\site\apidocs\deprecated-list.html = 1795685097012
+C:\web-programming\lab5\target\site\apidocs\help-doc.html = 1795685097021
+C:\web-programming\lab5\target\site\apidocs\index-all.html = 1795685097009
+C:\web-programming\lab5\target\site\apidocs\index.html = 1795685097016
+C:\web-programming\lab5\target\site\apidocs\overview-tree.html = 1795685097004
+C:\web-programming\lab5\target\site\apidocs\package-list = 1795685096963
+C:\web-programming\lab5\target\site\apidocs\script.js = 1795685097025
+C:\web-programming\lab5\target\site\apidocs\stylesheet.css = 1795685097024
