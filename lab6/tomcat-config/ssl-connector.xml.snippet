@@ -1,0 +1,12 @@
+<!-- ДОБАВИТЬ внутрь <Service name="Catalina"> в server.xml; не дублировать порт 8443 -->
+<Connector port="8443"
+           protocol="org.apache.coyote.http11.Http11NioProtocol"
+           SSLEnabled="true" maxThreads="150"
+           scheme="https" secure="true">
+    <SSLHostConfig protocols="TLSv1.2">
+        <Certificate certificateKeystoreFile="conf/lab6-keystore.jks"
+                     certificateKeystorePassword="REPLACE_WITH_LOCAL_KEYSTORE_PASSWORD"
+                     certificateKeystoreType="JKS"
+                     type="RSA" />
+    </SSLHostConfig>
+</Connector>

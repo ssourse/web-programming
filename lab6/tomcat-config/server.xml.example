@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Демонстрационная минимальная конфигурация Tomcat 9; НЕ заменяйте ею реальный server.xml! -->
+<Server port="8005" shutdown="SHUTDOWN">
+    <Listener className="org.apache.catalina.startup.VersionLoggerListener" />
+    <Listener className="org.apache.catalina.core.JreMemoryLeakPreventionListener" />
+    <Listener className="org.apache.catalina.mbeans.GlobalResourcesLifecycleListener" />
+    <GlobalNamingResources>
+        <Resource name="UserDatabase" auth="Container"
+                  type="org.apache.catalina.UserDatabase"
+                  description="User database"
+                  factory="org.apache.catalina.users.MemoryUserDatabaseFactory"
+                  pathname="conf/tomcat-users.xml" />
+    </GlobalNamingResources>
+    <Service name="Catalina">
+        <Connector port="8080" protocol="HTTP/1.1" connectionTimeout="20000"
+                   redirectPort="8443" useBodyEncodingForURI="true" />
+        <Connector port="8081" protocol="HTTP/1.1" connectionTimeout="20000"
+                   redirectPort="8443" useBodyEncodingForURI="true" />
+        <Connector port="8443" protocol="org.apache.coyote.http11.Http11NioProtocol"
+                   SSLEnabled="true" maxThreads="150" scheme="https" secure="true">
+            <SSLHostConfig protocols="TLSv1.2">
+                <Certificate certificateKeystoreFile="conf/lab6-keystore.jks"
+                             certificateKeystorePassword="REPLACE_WITH_LOCAL_KEYSTORE_PASSWORD"
+                             certificateKeystoreType="JKS" type="RSA" />
+            </SSLHostConfig>
+        </Connector>
+        <Engine name="Catalina" defaultHost="localhost">
+            <Realm className="org.apache.catalina.realm.LockOutRealm">
+                <Realm className="org.apache.catalina.realm.UserDatabaseRealm"
+                       resourceName="UserDatabase" />
+            </Realm>
+            <Host name="localhost" appBase="webapps" unpackWARs="true" autoDeploy="true" />
+        </Engine>
+    </Service>
+</Server>
